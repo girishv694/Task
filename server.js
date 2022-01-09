@@ -10,7 +10,7 @@ app.use(cors());
 
 app.use('', Task);
 
-app.listen(3001,async ()=>{
+app.listen(process.env.PORT || 3001,async ()=>{
 
     
         await connect();
